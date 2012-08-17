@@ -1,0 +1,137 @@
+ <html>
+    <head>
+      <script type="text/javascript" src="ros.js"></script>
+      <script type="text/javascript">
+    function nop() {}
+    /* console for logging */
+//http://brown-ros-pkg.googlecode.com/svn/tags/brown-ros-pkg/rosbridge/
+    var console = null;
+    /* state */
+    var active = false;
+    var x=0;
+    var y=0;
+    var tetha=0;
+    function log(msg) {
+        console.innerHTML = console.innerHTML + msg + "<br>";
+    }
+    function drawcarro(x,y,theta){
+        // Primero se recupera el objeto canvas a modificar
+        var canvas = document.getElementById('simulacion');
+        // Luego se le indicar la forma de trabajar 2D o 3D 
+        var context = canvas.getContext('2d');
+		var height=60;
+		var width=40;
+		var radius=60;
+        // Se comienza a dibujar en el lienzo utilizando objetos  
+        // gráficos
+		context.clearRect(0, 0, canvas.width, canvas.height);
+		context.save();
+		context.translate(x,y);
+		context.rotate(theta);
+		context.clearRect(0, 0, canvas.width, canvas.height);
+        context.fillStyle = "rgba(0,255,0,0.6)";
+        context.fillRect (0-height/2, 0-width/2, height, width);
+        context.fillStyle = "rgba(255,0,0, 0.1)";
+        context.beginPath();
+        context.arc(0,0,radius,0,Math.PI*2,true);
+        context.fill();
+        context.fillStyle = "rgba(0,0,255,0.6)";
+        context.beginPath();
+		context.strokeStyle="purple";
+        context.moveTo(0-height/4,0-width/4);
+        context.lineTo(0-height/4,0+width/4);
+		context.lineTo(0+height/4,0);
+        context.fill();
+		context.restore();
+      }
+    function init() {
+        function waitForDOM() {
+            var cnsl = document.getElementById('console');
+            if (cnsl == null) {
+                setTimeout(waitForDOM, 100);
+            } else {
+                console = cnsl;
+                setTimeout(main, 0);
+            }
+        }
+        setTimeout(waitForDOM, 100);
+    }
+    function main() {
+        log('console initialized');
+        log('creating ROSProxy connection object...');
+        var connection = null;
+        try {
+            connection = new ros.Connection('ws://192.168.0.122:9090');
+        } catch (err) {
+            log('Problem creating proxy connection object!');
+            return;
+        }
+        log('created');
+        //log('connecting to ' + address + ' on port ' + port + '...');
+        connection.setOnClose(function (e) {
+            log('connection closed');
+        });
+        connection.setOnError(function (e) {
+            log('network error!');
+        });
+        connection.setOnOpen(function (e) {
+            log('connected');
+            log('initializing ROSProxy...');
+            try {
+                connection.callService('/rosjs/topics', '[]', nop);
+            } catch (error) {
+                log('Problem initializing ROSProxy!');
+                return;
+            }
+            log('initialized');
+            log('registering handler for robot...');
+            try {
+                connection.addHandler('/robot_x', function (msg) {
+                    x=msg.data;
+                });
+                connection.addHandler('/robot_y', function (msg) {
+                    y=msg.data;
+                });
+                connection.addHandler('/robot_tetha', function (msg) {
+                    tetha=msg.data;
+                });
+            } catch (error) {
+                log('Problem registering handler!');
+                return;
+            }
+            log('registered');
+            log('subscribing to robot...');
+            try {
+                connection.callService('/rosjs/subscribe', '["/robot_x",1000]', nop);
+		connection.callService('/rosjs/subscribe', '["/robot_y",1000]', nop);
+		connection.callService('/rosjs/subscribe', '["/robot_tetha",1000]', nop);
+            } catch (error) {
+                log('Problem subscribing!');
+            }
+            log('subscribed');
+            log('setting closed loop control policy...');
+            setInterval(function () {
+			var d=new Date();
+			var t=d.toLocaleTimeString();
+			document.getElementById("result").innerHTML=t;
+                 
+		drawcarro(x+200,y+200,tetha);
+		if(x>200 || y>200 || x<-200 || y<-200){
+		log('vehiculo fuera de los limites');
+		log("["+x+','+y+','+tetha+']');
+		}
+
+            }, 1000);
+            log('running');
+        });
+    }
+        </script>
+      </head>
+    <body onload="init()">
+   <p>Hora do sistema: <output id="result"></output></p>
+    <canvas id="simulacion" width="400" height="400">
+    Navegador con Canvas no soportado
+    </canvas>
+    <div id="console"></div>
+    </body>
+    </html>

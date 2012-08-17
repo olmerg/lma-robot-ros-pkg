@@ -1,0 +1,25 @@
+import("lma_acker_rtt")
+import("rtt_std_msgs")
+
+# Load a AckermanRobot component
+loadComponent("AckermanRobot","AckermanRobot")
+
+# Give it a periodic activity
+setActivity("AckermanRobot",0.01,HighestPriority,ORO_SCHED_RT)
+
+# Create connections
+stream("AckermanRobot.command_steerp", ros.topic("lma_robot/command_steerp"))
+stream("AckermanRobot.command_velocity", ros.topic("lma_robot/command_velocity"))
+
+stream("AckermanRobot.robot_x", ros.topic("robot_x"))
+stream("AckermanRobot.robot_y", ros.topic("robot_y"))
+stream("AckermanRobot.robot_tetha", ros.topic("robot_tetha"))
+stream("AckermanRobot.robot_steer", ros.topic("robot_steer"))
+stream("AckermanRobot.robot_time", ros.topic("robot_time"))
+
+
+# Configure the HelloRobot component
+AckermanRobot.configure()
+
+# Start it
+AckermanRobot.start()
