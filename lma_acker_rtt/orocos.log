@@ -1,0 +1,206 @@
+0.000 [ Info   ][Logger] No ORO_LOGLEVEL environment variable set.
+0.000 [ Info   ][Logger]  OROCOS version '2.5.0' compiled with GCC 4.6.3. Running in GNU/Linux.
+0.000 [ Info   ][Logger] Orocos Logging Activated at level : [ Warning] ( 4 ) 
+0.000 [ Info   ][Logger] Reference System Time is : 1345130814863349083 ticks ( 1.34513e+09 seconds ).
+0.000 [ Info   ][Logger] Logging is relative to this time.
+0.001 [ Info   ][Logger] No RTT_COMPONENT_PATH set. Using default: /home/robot/ros_workspace/orocos_toolchain/rtt/../install/lib/orocos
+0.001 [ Info   ][Logger] plugin 'rtt' not loaded before.
+0.001 [ Info   ][Logger] Loading plugin libraries from directory /home/robot/ros_workspace/orocos_toolchain/rtt/../install/lib/orocos/gnulinux/./plugins ...
+0.003 [ Info   ][Logger] Loaded RTT Service 'marshalling' from 'rtt-marshalling'
+0.003 [ Info   ][Logger] Loaded RTT Service 'scripting' from 'rtt-scripting'
+0.004 [ Info   ][Logger] typekit 'rtt' not loaded before.
+0.004 [ Info   ][Logger] Loading typekit libraries from directory /home/robot/ros_workspace/orocos_toolchain/rtt/../install/lib/orocos/gnulinux/./types ...
+0.105 [ Info   ][TypekitRepository::Import] Loading Typekit rtt-types.
+0.106 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-types' from 'rtt-typekit'
+0.168 [ Info   ][TypekitRepository::Import] Loading Transport CORBA://rtt-types.
+0.168 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for ConnPolicy
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for TaskContext
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for array
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for bool
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for char
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for double
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for float
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for int
+0.169 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.170 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for uint
+0.170 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for void
+0.170 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-corba-types' from 'rtt-transport-corba'
+0.178 [ Info   ][TypekitRepository::Import] Loading Transport mqueue://rtt-types.
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for array
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for bool
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for char
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for double
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for float
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for int
+0.178 [ Info   ][TypekitRepository::Import] Registered new 'mqueue' transport for uint
+0.178 [ Info   ][Logger] Loaded RTT TypeKit/Transport 'rtt-mqueue-transport' from 'rtt-transport-mqueue'
+0.178 [ Info   ][Logger] OCL factory set for real-time logging
+0.178 [ Info   ][Thread] Creating Thread for scheduler=0, priority=0, CPU affinity=0, with name='Deployer'
+0.180 [ Info   ][Deployer] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.
+0.180 [ Info   ][Thread] Creating Thread for scheduler=0, priority=0, CPU affinity=0, with name='GlobalEngine'
+0.181 [ Info   ][GlobalEngine] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.
+0.184 [ Info   ][DeploymentComponent::configure] No RTT_COMPONENT_PATH set. Using default.
+0.184 [ Info   ][DeploymentComponent::configure] RTT_COMPONENT_PATH was set to /home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos
+0.184 [ Info   ][DeploymentComponent::configure] Re-scanning for plugins and components...
+0.184 [ Info   ][DeploymentComponent::configure] Importing directory /home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos ...
+0.185 [ Info   ][Logger] No site file was found. Importing 'ocl' by default.
+0.202 [ Info   ][DeploymentComponent::import] Importing directory /home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl ...
+0.225 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::logging::Log4cxxAppender'
+0.232 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaTLSFComponent'
+0.239 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/liborocos-ocl-common-gnulinux.so'
+0.242 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::LuaComponent'
+0.251 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/liborocos-ocl-timer-gnulinux.so'
+0.256 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/liborocos-ocl-reporting-gnulinux.so'
+0.261 [ Info   ][DeploymentComponent::import] Loaded multi component library '/home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/liborocos-ocl-logging-gnulinux.so'
+0.267 [ Info   ][DeploymentComponent::import] Loaded component type 'OCL::HelloWorld'
+0.267 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/types ...
+0.287 [ Info   ][TypekitRepository::Import] Loading Typekit OCLTypekit.
+0.287 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'OCLTypekit' from 'ocl'
+0.287 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/robot/ros_workspace/orocos_toolchain/ocl/../install/lib/orocos/gnulinux/ocl/plugins ...
+0.291 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'print' from 'print'
+0.295 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'LuaTLSF' from 'rttlua-tlsf-plugin'
+0.299 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'os' from 'os'
+0.301 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'Lua' from 'rttlua-plugin'
+0.301 [ Info   ][Logger] Loading Service or Plugin scripting in TaskContext Deployer
+0.310 [ Info   ][Logger] Found complete interface of requested service 'scripting'
+0.311 [ Info   ][Logger] Running Script AckermanRobot.ops ...
+0.340 [ Info   ][DeploymentComponent::import] Importing directory /home/robot/ros_workspace/rtt_ros_integration/rtt_rospack/lib/orocos/gnulinux ...
+0.340 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/robot/ros_workspace/rtt_ros_integration/rtt_rospack/lib/orocos/gnulinux/plugins ...
+0.343 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'rospack' from 'rtt_rospack'
+0.351 [ Info   ][DeploymentComponent::import] Importing directory /home/robot/ros_workspace/rtt_ros_integration/rtt_rosnode/lib/orocos/gnulinux ...
+0.352 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/robot/ros_workspace/rtt_ros_integration/rtt_rosnode/lib/orocos/gnulinux/types ...
+0.603 [ Info   ][TypekitRepository::Import] Loading Typekit ros-primitives.
+0.608 [ Info   ][TypekitRepository::Import] TypeInfo for type 'int32' already exists as 'int': I'll alias the original and install the new instance.
+0.609 [ Info   ][TypekitRepository::Import] TypeInfo for type 'int32[]' already exists as 'ints': I'll alias the original and install the new instance.
+0.609 [ Info   ][TypekitRepository::Import] TypeInfo for type 'uint32' already exists as 'uint': I'll alias the original and install the new instance.
+0.612 [ Info   ][TypekitRepository::Import] TypeInfo for type 'float32' already exists as 'float': I'll alias the original and install the new instance.
+0.613 [ Info   ][TypekitRepository::Import] TypeInfo for type 'float64' already exists as 'double': I'll alias the original and install the new instance.
+0.613 [ Info   ][TypekitRepository::Import] TypeInfo for type 'float64[]' already exists as 'array': I'll alias the original and install the new instance.
+0.614 [ Info   ][TypekitRepository::Import] Registered new 'CORBA' transport for string
+0.614 [ Info   ][TypekitRepository::Import] TypeInfo for type 'string[]' already exists as 'strings': I'll alias the original and install the new instance.
+0.615 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-primitives' from 'rtt-ros-primitives-typekit'
+0.616 [ Info   ][DeploymentComponent::import] Loading plugin libraries from directory /home/robot/ros_workspace/rtt_ros_integration/rtt_rosnode/lib/orocos/gnulinux/plugins ...
+0.675 [ Info   ][DeploymentComponent::import] Loaded RTT Service 'rosparam' from 'rtt_rosparam_service'
+0.682 [ Info   ][DeploymentComponent::import] Initializing ROS node
+0.753 [ Info   ][DeploymentComponent::import] ROS node spinner started
+0.758 [ Info   ][DeploymentComponent::import] Loaded RTT Plugin 'ros_integration' from 'rtt_rosnode'
+0.763 [ Info   ][DeploymentComponent::import] Importing directory /home/robot/ros_workspace/lma_acker_rtt/lib/orocos/gnulinux ...
+0.774 [ Info   ][DeploymentComponent::import] Loaded component type 'AckermanRobot'
+0.824 [ Info   ][DeploymentComponent::import] Importing directory /home/robot/ros_workspace/rtt_ros_comm/rtt_std_msgs/lib/orocos/gnulinux ...
+0.824 [ Info   ][DeploymentComponent::import] Loading typekit libraries from directory /home/robot/ros_workspace/rtt_ros_comm/rtt_std_msgs/lib/orocos/gnulinux/types ...
+1.512 [ Info   ][TypekitRepository::Import] Loading Typekit ros-std_msgs.
+1.519 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'ros-std_msgs' from 'rtt-std_msgs-typekit'
+1.631 [ Info   ][TypekitRepository::Import] Loading Transport ros://ros-std_msgs.
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Bool
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Byte
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/ByteMultiArray
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Char
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/ColorRGBA
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Duration
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Empty
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float32
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float32MultiArray
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float64
+1.631 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Float64MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Header
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int16
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int16MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int32
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int32MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int64
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int64MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int8
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Int8MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/MultiArrayDimension
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/MultiArrayLayout
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/String
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/Time
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt16
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt16MultiArray
+1.632 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt32
+1.633 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt32MultiArray
+1.633 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt64
+1.633 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt64MultiArray
+1.633 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt8
+1.633 [ Info   ][TypekitRepository::Import] Registered new 'ros' transport for /std_msgs/UInt8MultiArray
+1.633 [ Info   ][DeploymentComponent::import] Loaded RTT TypeKit/Transport 'rtt-ros-std_msgs-transport' from 'rtt-std_msgs-ros-transport'
+1.635 [ Info   ][Thread] Creating Thread for scheduler=0, priority=0, CPU affinity=0, with name='AckermanRobot'
+1.636 [ Info   ][AckermanRobot] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.
+1.637 [ Info   ][DeploymentComponent::loadComponent] Adding AckermanRobot as new peer:  OK.
+1.640 [ Info   ][Thread] Creating Thread for scheduler=1, priority=99, CPU affinity=4294967295, with name='AckermanRobot'
+1.640 [ Warning][Thread] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.641 [ Warning][Thread] Forcing priority (99) of thread with SCHED_OTHER policy to 0.
+1.642 [ Warning][AckermanRobot] Lowering scheduler type to SCHED_OTHER for non-privileged users..
+1.643 [ Info   ][AckermanRobot] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.01.
+1.655 [ Info   ][ScriptingService] Created input stream for input port command_steerp
+1.673 [ Info   ][ScriptingService] Created input stream for input port command_velocity
+1.683 [ Info   ][Thread] Creating Thread for scheduler=0, priority=1, CPU affinity=0, with name='RosPublishActivity'
+1.684 [ Info   ][RosPublishActivity] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.
+1.684 [ Info   ][ScriptingService] Created output stream for output port robot_x
+1.713 [ Info   ][ScriptingService] Created output stream for output port robot_y
+1.723 [ Info   ][ScriptingService] Created output stream for output port robot_tetha
+1.735 [ Info   ][ScriptingService] Created output stream for output port robot_steer
+1.746 [ Info   ][ScriptingService] Created output stream for output port robot_time
+1.755 [ Info   ][Thread] Creating Thread for scheduler=0, priority=0, CPU affinity=0, with name='TaskBrowser'
+1.756 [ Info   ][TaskBrowser] Thread created with scheduler type '0', priority 0, cpu affinity 63 and period 0.
+1.771 [ Info   ][Logger] Entering Task Deployer
+38.055 [ Info   ][Logger] Steer speed: 0
+38.055 [ Info   ][Logger] velocity: 1
+43.944 [ Info   ][Logger] Steer speed: 0
+43.945 [ Info   ][Logger] velocity: 2
+44.234 [ Info   ][Logger] Steer speed: 0
+44.235 [ Info   ][Logger] velocity: 3
+44.525 [ Info   ][Logger] Steer speed: 0
+44.525 [ Info   ][Logger] velocity: 4
+47.835 [ Info   ][Logger] Steer speed: 0
+47.835 [ Info   ][Logger] velocity: 5
+48.735 [ Info   ][Logger] Steer speed: 0
+48.735 [ Info   ][Logger] velocity: 6
+49.035 [ Info   ][Logger] Steer speed: 0
+49.035 [ Info   ][Logger] velocity: 7
+53.614 [ Info   ][Logger] Steer speed: 0
+53.615 [ Info   ][Logger] velocity: 8
+77.165 [ Info   ][Logger] Steer speed: 0
+77.166 [ Info   ][Logger] velocity: 7
+77.465 [ Info   ][Logger] Steer speed: 0
+77.465 [ Info   ][Logger] velocity: 6
+77.694 [ Info   ][Logger] Steer speed: 0
+77.695 [ Info   ][Logger] velocity: 5
+77.885 [ Info   ][Logger] Steer speed: 0
+77.885 [ Info   ][Logger] velocity: 4
+78.054 [ Info   ][Logger] Steer speed: 0
+78.055 [ Info   ][Logger] velocity: 3
+78.264 [ Info   ][Logger] Steer speed: 0
+78.265 [ Info   ][Logger] velocity: 2
+79.025 [ Info   ][Logger] Steer speed: 0
+79.025 [ Info   ][Logger] velocity: 1
+79.255 [ Info   ][Logger] Steer speed: 0
+79.255 [ Info   ][Logger] velocity: 0
+79.625 [ Info   ][Logger] Steer speed: 0
+79.625 [ Info   ][Logger] velocity: -1
+80.075 [ Info   ][Logger] Steer speed: 0
+80.075 [ Info   ][Logger] velocity: -2
+80.385 [ Info   ][Logger] Steer speed: 0
+80.386 [ Info   ][Logger] velocity: -3
+128.085 [ Info   ][Logger] velocity: -3
+128.087 [ Info   ][Logger] Steer speed: -0.1
+132.645 [ Info   ][Logger] Steer speed: 0
+132.645 [ Info   ][Logger] velocity: -3
+147.905 [ Info   ][Logger] Steer speed: 0.1
+147.905 [ Info   ][Logger] velocity: -3
+159.115 [ Info   ][Logger] Steer speed: 0
+159.115 [ Info   ][Logger] velocity: -3
+162.095 [ Info   ][Logger] Steer speed: -0.1
+162.095 [ Info   ][Logger] velocity: -3
+167.624 [ Info   ][Logger] Steer speed: 0
+167.625 [ Info   ][Logger] velocity: -3
+237.110 [ Info   ][Logger] Ignoring deployment shutdown function due to missing peer.
+237.113 [ Info   ][DeploymentComponent::stopComponentsGroup] Stopping group 0
+237.115 [ Info   ][DeploymentComponent::stopComponentsGroup] Stopped AckermanRobot
+237.115 [ Info   ][DeploymentComponent::cleanupComponentsGroup] Cleaning up group 0
+237.115 [ Info   ][DeploymentComponent::cleanupComponentsGroup] Cleaned up AckermanRobot
+237.115 [ Info   ][Logger] Unloading group 0
+237.151 [ Info   ][RosPublishActivity] RosPublishActivity cleans up: no more work.
+237.171 [ Info   ][Logger] Disconnected and destroyed AckermanRobot
+237.171 [ Info   ][Logger] Kick-out of group 0 successful.
+237.186 [ Info   ][Logger] Orocos Logging Deactivated.

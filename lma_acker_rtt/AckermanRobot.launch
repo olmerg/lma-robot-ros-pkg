@@ -1,0 +1,3 @@
+<launch>
+<node name="AckermanRobot" pkg="ocl" type="deployer-gnulinux" args="-s $(find lma_acker_rtt)/AkermanRobot.ops -linfo --" output="screen"/>
+</launch>
